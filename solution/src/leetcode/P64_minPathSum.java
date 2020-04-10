@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P64_minPathSum {
 
     public static void main(String[] args) {

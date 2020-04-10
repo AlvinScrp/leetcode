@@ -1,3 +1,5 @@
+package leetcode;
+
 import java.util.Arrays;
 
 public class P4_findMedianSortedArrays {

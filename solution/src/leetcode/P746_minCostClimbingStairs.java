@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P746_minCostClimbingStairs {
     public static void main(String[] args) {
         int[] cost1 = {10, 15, 20};

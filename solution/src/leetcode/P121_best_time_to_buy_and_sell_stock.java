@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P121_best_time_to_buy_and_sell_stock {
 
 
@@ -28,27 +30,6 @@ public class P121_best_time_to_buy_and_sell_stock {
 //
 //    }
     public static int maxProfit(int[] prices) {
-//        int n = prices.length;
-//        if (n == 0 || n == 1) {
-//            return 0;
-//        }
-//        int min = prices[0];
-//        int maxProfit = 0;
-//        for (int i = 1; i < n; i++) {
-//            maxProfit = Math.max(maxProfit, prices[i] - min);
-//            min = Math.min(min, prices[i]);
-//        }
-
-//        int[] fMins = new int[n];
-//        fMins[0] = prices[0];
-//        for (int i = 1; i < n; i++) {
-//            fMins[i] = Math.min(fMins[i - 1], prices[i]);
-//        }
-//        int maxProfit = 0;
-//        for (int i = 1; i < n; i++) {
-//            maxProfit = Math.max(maxProfit, prices[i] - fMins[i - 1]);
-//        }
-//        return maxProfit;
 
 
         int last = 0, profit = 0;

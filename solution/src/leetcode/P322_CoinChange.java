@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P322_CoinChange {
 
 

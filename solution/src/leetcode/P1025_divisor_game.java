@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P1025_divisor_game {
     public static void main(String[] args) {
         System.out.println(divisorGame(9));

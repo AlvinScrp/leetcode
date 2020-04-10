@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P7_ReverseInteger {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P8_StringToInteger_atoi {
     public static void main(String[] args) {
 

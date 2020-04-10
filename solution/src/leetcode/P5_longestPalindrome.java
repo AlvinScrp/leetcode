@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P5_longestPalindrome {
 
     public static void main(String[] args) {

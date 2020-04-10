@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P62_UniquePaths {
 
 

@@ -1,3 +1,5 @@
+package leetcode;
+
 public class P198_house_robber {
 
 
