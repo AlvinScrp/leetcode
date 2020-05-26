@@ -4,9 +4,9 @@ public class P3_ {
 
     public static void main(String[] args) {
         System.out.println(new P3_().longestSubarray(new int[]{8}, 10));
-//        System.out.println(new P3_().longestSubarray(new int[]{8,2,4,7},4));
-//        System.out.println(new P3_().longestSubarray(new int[]{10,1,2,4,7,2},5));
-//        System.out.println(new P3_().longestSubarray(new int[]{4,2,2,2,4,4,2,2},0));
+//        System.out.println(new P3_5398().longestSubarray(new int[]{8,2,4,7},4));
+//        System.out.println(new P3_5398().longestSubarray(new int[]{10,1,2,4,7,2},5));
+//        System.out.println(new P3_5398().longestSubarray(new int[]{4,2,2,2,4,4,2,2},0));
 
 
     }
