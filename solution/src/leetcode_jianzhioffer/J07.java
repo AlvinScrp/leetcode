@@ -5,17 +5,6 @@ import java.util.HashMap;
 public class J07 {
 
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
-
     HashMap<Integer, Integer> inorderIndexs;
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
