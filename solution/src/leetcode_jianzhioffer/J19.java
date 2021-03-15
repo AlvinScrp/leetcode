@@ -49,7 +49,7 @@ public class J19 {
      * @param p
      * @return
      */
-//    public boolean isMatch(String s, String p) {
+//    public boolean isCharMatch(String s, String p) {
 //
 //    }
 }

@@ -1,4 +1,4 @@
-package leetcode.p101_200;
+package leetcode.dp;
 
 public class P198_house_robber {
 
