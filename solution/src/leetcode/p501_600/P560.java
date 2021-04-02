@@ -1,6 +1,5 @@
-package leetcode;
+package leetcode.p501_600;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

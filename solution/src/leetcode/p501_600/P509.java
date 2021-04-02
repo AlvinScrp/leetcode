@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.p501_600;
 
 public class P509 {
 

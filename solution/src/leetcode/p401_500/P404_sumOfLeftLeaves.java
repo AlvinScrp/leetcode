@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.p401_500;
 
 import java.util.LinkedList;
 import java.util.List;

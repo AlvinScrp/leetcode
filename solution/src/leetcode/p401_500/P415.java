@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.p401_500;
 
 public class P415 {
     public static void main(String[] args) {

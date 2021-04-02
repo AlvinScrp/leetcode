@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.p401_500;
 
 public class P437_pathSum {
 
