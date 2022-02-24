@@ -1,7 +1,5 @@
 package leetcode_contest.weekly_194;
 
-import javafx.util.Pair;
-
 import java.util.*;
 
 public class P3 {
