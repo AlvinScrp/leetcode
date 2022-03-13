@@ -14,4 +14,20 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "ListNode{" + val + "}";
+    }
+
+    public String asString() {
+        return val + "," + (next != null ? next.asString() : "");
+    }
+
+    public void print() {
+        System.out.print(val + ",");
+        if (next != null) {
+            next.print();
+        }
+    }
 }
