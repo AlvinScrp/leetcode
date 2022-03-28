@@ -32,39 +32,25 @@ class A92 {
     class Solution {
         public ListNode reverseBetween(ListNode head, int left, int right) {
             if (left == right) return head;
-
-            ListNode dummy = new ListNode(-1);
-            dummy.next = head;
-
-            ListNode start = null;
-            ListNode node = head;
-            ListNode pre = dummy;
-            ListNode next = null;
-            int count = 1;
-            while (node != null) {
-                if (count == left) {
-                    start = node;
-                    pre.next = null;
-                } else if (count == right) {
-                    next = node.next;
-                    node.next = null;
-                    pre.next = reverse(start);
-                    start.next = next;
-                    break;
+            ListNode dummy = new ListNode(-1, head);
+            ListNode pre = dummy, first = head;
+            ListNode node = dummy;
+            for (int index = 0; node != null && index <= right; index++) {
+                if (index < left) {
+                    pre = node;
+                    node = node.next;
+                } else if (index == left) {
+                    first = node;
+                    node = node.next;
+                } else if (index <= right) {
+                    first.next = node.next;
+                    ListNode next = pre.next;
+                    pre.next = node;
+                    node.next = next;
+                    node = first.next;
                 }
-                count++;
-                if (start == null) pre = node;
-                node = node.next;
             }
             return dummy.next;
-        }
-
-        private ListNode reverse(ListNode head) {
-            if (head == null || head.next == null) return head;
-            ListNode node = reverse(head.next);
-            head.next.next = head;
-            head.next = null;
-            return node;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
