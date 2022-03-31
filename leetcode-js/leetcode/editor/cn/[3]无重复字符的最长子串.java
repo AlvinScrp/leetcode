@@ -1,5 +1,4 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
 
 class A3 {
 
@@ -10,28 +9,20 @@ class A3 {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int lengthOfLongestSubstring(String s) {
-            int n = s.length();
-            if (n <= 1) return n;
-            int max = 0;
-            Set<Character> set = new HashSet<>();
-            for (int i = 0, j = 0; i < n; i++) {
+            if (s.length() <= 1) return s.length();
+            HashMap<Character, Integer> map = new HashMap<>();
+            int ans = 0;
+            for (int i = 0, j = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
-                if (!set.contains(c)) {
-                    set.add(c);
-                    max = Math.max(max, set.size());
-                } else {
-                    while (j < i) {
-                        if (s.charAt(j) != c) {
-                            set.remove(s.charAt(j));
-                            j++;
-                        } else {
-                            j++;
-                            break;
-                        }
+                if (map.containsKey(c)) {
+                    for (int k = map.get(c); j <= k; j++) {
+                        map.remove(s.charAt(j));
                     }
                 }
+                map.put(c, i);
+                ans = Math.max(ans,map.size());
             }
-            return max;
+            return ans;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
